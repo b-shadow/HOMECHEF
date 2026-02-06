@@ -88,8 +88,8 @@
 
 .form-group input:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #ff9800;
+  box-shadow: 0 0 0 3px rgba(255, 152, 0, 0.1);
 }
 
 .form-group input:disabled {
@@ -135,48 +135,21 @@
   cursor: not-allowed;
 }
 
-.test-accounts {
-  border-top: 2px solid #e0e0e0;
-  padding-top: 1.5rem;
-}
-
-.test-accounts p {
-  text-align: center;
-  color: #666;
-  font-size: 0.9rem;
-  margin: 0 0 1rem 0;
-  font-weight: 600;
-}
-.test-accounts {
-  display: none;
-}
-  background-color: #ffebee;
-}
-
-.test-btn.chef {
-  color: #f57c00;
-  border-color: #ffe0b2;
-}
-
-.test-btn.chef:hover:not(:disabled) {
-  background-color: #fff3e0;
-}
-
-.test-btn.client {
-  color: #388e3c;
-  border-color: #c8e6c9;
-}
-
-.test-btn.client:hover:not(:disabled) {
-  background-color: #f1f8f6;
-}
-
 @media (max-width: 480px) {
   .login-card {
     padding: 1.5rem;
   }
 
+  .login-header {
+    margin: -1.5rem -1.5rem 2rem -1.5rem;
+    padding: 1.2rem;
+  }
+
   .login-header h1 {
     font-size: 2rem;
+  }
+
+  .login-header p {
+    font-size: 1rem;
   }
 }

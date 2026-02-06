@@ -32,26 +32,6 @@ export function Login({ onLoginSuccess }: LoginProps) {
     }
   };
 
-  const handleQuickLogin = async (testEmail: string, testPassword: string) => {
-    setEmail(testEmail);
-    setPassword(testPassword);
-    setError('');
-    setLoading(true);
-
-    try {
-      const response = await loginService(testEmail, testPassword);
-      if (response.success && response.user) {
-        onLoginSuccess(response.user);
-      } else {
-        setError(response.error || 'Error en el login');
-      }
-    } catch (err) {
-      setError('Error al conectar con el servidor');
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
     <div className="login-container">
       <div className="login-card">
