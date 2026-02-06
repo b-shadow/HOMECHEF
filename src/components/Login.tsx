@@ -93,36 +93,6 @@ export function Login({ onLoginSuccess }: LoginProps) {
             {loading ? 'Ingresando...' : 'Ingresar'}
           </button>
         </form>
-
-        <div className="test-accounts">
-          <p>Cuentas de prueba:</p>
-          <div className="test-buttons">
-            <button
-              type="button"
-              className="test-btn admin"
-              onClick={() => handleQuickLogin('admin@homechef.com', 'admin123')}
-              disabled={loading}
-            >
-              👤 Admin
-            </button>
-            <button
-              type="button"
-              className="test-btn chef"
-              onClick={() => handleQuickLogin('chef@homechef.com', 'chef123')}
-              disabled={loading}
-            >
-              👨‍🍳 Cocinero
-            </button>
-            <button
-              type="button"
-              className="test-btn client"
-              onClick={() => handleQuickLogin('cliente@homechef.com', 'cliente123')}
-              disabled={loading}
-            >
-              🛒 Cliente
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );
